@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="login-favicon.png">
+    <title>SummitChat login</title>
+</head>
+<body>
+    
+    
+    <form action="" method="post" id="form" style="-webkit-user-select: none; user-select: none;">
+        <div id="form-content">
+            <div class="icon-div">
+                <img src="login-favicon.png" alt="Chatting app icon" id="icon">
+            </div>
+            <div class="icon-div">
+                <h1>Login</h1>
+            </div>
+            <div class="icon-div">
+                <div class="input-icon">
+                    <input type="email"  class="email-input inputs" required name="mail" placeholder="Email">
+                    <i class='bx bxs-envelope icon email-icon'></i>
+                </div>
+            </div>
+            <div class="icon-div">
+                <div class="input-icon" id="input-icon-password">
+                    <input type="password" class="password-input inputs" required name="password" placeholder="Password">
+                    <i class='bx bxs-lock-alt icon password-icon'></i>
+                </div>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="">Forgot password?</a>
+            </div>
+
+            <div class="icon-div">
+                <input type="submit" value="Login">
+            </div>
+
+            <div class="icon-div">
+                <label id="no-account">Don't have an account? <a href="" id="register">Register</a></label>
+            </div>
+        </div>
+    </form>
+
+    <script src="login-script.js"></script>
+</body>
+</html>
+
+<!--
+
+<i class='bx bxs-user'></i> - user(when signup/login)
+
+<i class='bx bxs-lock-alt' ></i> - closed lock(signup/login)
+<i class='bx bx-lock-open-alt' ></i> - opened lock(signup/login)
+
+-->

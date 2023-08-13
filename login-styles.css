@@ -1,0 +1,149 @@
+*{
+    font-family: poppins, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    background-image: url(login-mountain.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: rgb(51, 51, 51);
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    width: 100px;
+    margin-top: 30px;
+}
+
+#form{
+    position: relative;
+    background-color: rgba(197, 197, 197, 0.1);
+    backdrop-filter: blur(15px);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgb(47, 37, 21);
+    bottom: 25px;
+}/*-------------------------------------------------------------------------------------------------------*/
+#form-content{
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+}
+
+h1{
+    margin: 0px auto -4px auto;
+}
+
+.icon-div{
+    display: flex;
+    justify-content: center;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+input[type="checkbox"] {
+    accent-color: #ffffff;
+}
+
+.input-icon input{
+    width: 276px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 12px 15px;
+}
+.input-icon{
+    position: relative;
+}
+.input-icon input::placeholder{
+    color: rgb(206, 206, 206);
+    font-size: 14px;
+}
+.email-input{
+    margin: 13px 0px 13px 0px;
+}
+.email-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+#register{
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    margin-bottom: 12px;
+    width: 306px;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+    background-color: white;
+    transition: transform 0.3s ease;
+    color: rgb(61, 61, 61);
+    font-size: 19px;
+    font-weight: 800;
+}
+input[type="submit"]:hover{
+    transform: translateY(-2px);
+    background-color: rgb(236, 236, 236);
+}
+input[type="submit"]::value{
+    color: black;
+}
+.password-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 1;
+
+    transition: 0.3s ease;
+}
+
+.password-icon:hover{
+    cursor: pointer;
+    font-size: 22px;
+    right: 21px;
+}
+.inputs:focus{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+::selection{
+    background-color:  rgb(53, 53, 53);
+    color: white;
+}
+
+@media only screen and (max-width: 767px){
+    #form{
+        width: 100vh;
+        height: 100vh;
+        box-shadow: unset;
+        border-radius: unset;
+        background-color: unset;
+    }
+}
