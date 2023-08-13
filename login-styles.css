@@ -27,6 +27,7 @@ body{
     position: relative;
     background-color: rgba(197, 197, 197, 0.1);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     width: 400px;
     display: flex;
     justify-content: center;
